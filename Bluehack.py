@@ -14,7 +14,9 @@ def opt(): # options code
    print("Dos         [ 2 ]")
    print("Listen      [ 3 ]")
    print("Info        [ 4 ]")
-   print("exit        [ 5 ]")
+   print("bind        [ 5 ]")
+   print("")
+   print("exit        [ 0 ]")
    opt = input("[ Bluehack ] --> ")
    if opt == "1":
        scan()
@@ -24,6 +26,8 @@ def opt(): # options code
        listen()
    elif opt == "4":
        info()
+   elif opt == "5":
+       bind()
    else:
        sys.exit()
 def scan(): # listen code
@@ -39,10 +43,14 @@ def dos(): # Dos code
 def listen():
     mac = input("remote mac --> ")
     port = input("channel --> ")
-    os.system("rfcomm listen {}".format(mac , port))
+    os.system("rfcomm listen {} {}".format(mac , port))
 def info():
     mac = input("remote mac --> ")
     os.system("rfcomm show {}".format(mac))
+def bind():
+    mac = input("remote mac --> ")
+    port = input("channel --> ")
+    os.system("rfcomm bind {} {}".format(mac , port))
 time.sleep(0.5)
 banner()
 while True:
