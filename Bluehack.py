@@ -14,9 +14,9 @@ def opt(): # options code
    print("Dos         [ 2 ]")
    print("exit        [ 3 ]")
    opt = input("[ Bluehack ] --> ")
-   if opt == 1:
+   if opt == "1":
        listen()
-   elif opt == 2:
+   elif opt == "2":
        send()
    else:
        sys.exit()
