@@ -31,4 +31,4 @@ def send(): # Dos code
 time.sleep(0.5)
 banner()
 opt()
-os.system("python3 bluehack.py")
+os.system("python3 Bluehack.py")
