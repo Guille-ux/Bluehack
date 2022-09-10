@@ -30,5 +30,5 @@ def send(): # Dos code
         sys.exit()
 time.sleep(0.5)
 banner()
-opt()
-os.system("python3 Bluehack.py")
+while True:
+    opt()
