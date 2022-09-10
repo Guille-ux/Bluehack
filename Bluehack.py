@@ -16,13 +16,13 @@ def opt(): # options code
    print("Info        [ 4 ]")
    print("exit        [ 5 ]")
    opt = input("[ Bluehack ] --> ")
-   if opt == 1:
+   if opt == "1":
        scan()
-   elif opt == 2:
+   elif opt == "2":
        dos()
-   elif opt == 3:
+   elif opt == "3":
        listen()
-   elif opt == 4:
+   elif opt == "4":
        info()
    else:
        sys.exit()
