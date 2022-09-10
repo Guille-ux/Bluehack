@@ -10,4 +10,3 @@
 # requirements
 - python3
 - hcitool
-- pip
