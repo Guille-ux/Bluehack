@@ -37,7 +37,7 @@ def dos(): # Dos code
     except Exception:
         pass
 def listen():
-    port = input("channel -->")
+    port = input("channel --> ")
     os.system("rfcomm listen {}".format(port))
 def info():
     mac = input("remote mac --> ")
