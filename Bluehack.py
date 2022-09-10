@@ -23,7 +23,7 @@ def opt(): # options code
 def listen(): # listen code
     os.system("hcitool scan")
 def send(): # Dos code
-    mac = input("remote mac -->")
+    mac = input("remote mac --> ")
     try:
         os.system("sudo hcitool cc {} ; sudo hcitool auth {}".format(mac, mac))
     except Eception:
