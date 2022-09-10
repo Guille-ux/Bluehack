@@ -33,12 +33,13 @@ def dos(): # Dos code
     port = input("channel --> ")
     try:
         while True:
-            os.system("rfcomm connect {} {}".format(mac , channel))
+            os.system("rfcomm connect {} {}".format(mac , port))
     except Exception:
         pass
 def listen():
+    mac = input("remote mac --> ")
     port = input("channel --> ")
-    os.system("rfcomm listen {}".format(port))
+    os.system("rfcomm listen {}".format(mac , port))
 def info():
     mac = input("remote mac --> ")
     os.system("rfcomm show {}".format(mac))
