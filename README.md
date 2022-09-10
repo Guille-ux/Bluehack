@@ -10,3 +10,4 @@
 # requirements
 - python3
 - hcitool
+- bluetoothctl
