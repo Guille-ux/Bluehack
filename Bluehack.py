@@ -3,6 +3,7 @@ import sys
 import os
 
 def banner():
+    os.system("clear")
     print(""" --  |   |    |  -- |   |        ---- | /  """)
     print("""|  | |   |    | |   |   |       |     |/   """)
     print("""| -  |   |    | |-- |---|   /\  |     |\   """)
