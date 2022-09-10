@@ -20,9 +20,9 @@ def opt(): # options code
        scan()
    elif opt == 2:
        dos()
-   elif opt == 3
+   elif opt == 3:
        listen()
-   elif opt == 4
+   elif opt == 4:
        info()
    else:
        sys.exit()
