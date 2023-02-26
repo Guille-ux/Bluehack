@@ -1,5 +1,5 @@
 # Bluehack
-![Bluehack](Bluehack.png)
+![Bluehack](Bluehack.png)![Bluehack]
 
 # Install
 - git clone https://github.com/Guille-ux/Bluehack.git
