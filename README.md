@@ -1,6 +1,5 @@
 # Bluehack
-![Bluehack](Bluehack.png)![Bluehack]
-
+![Bluehack](Bluehack.png)
 # Install
 - git clone https://github.com/Guille-ux/Bluehack.git
 - cd Bluehack
